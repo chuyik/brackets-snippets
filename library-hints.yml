@@ -823,3 +823,2036 @@
   description: url encode
   text: |
         arsort(${1:array})
+- trigger: bs3-alert:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>${1:Title!}</strong> ${2:Alert body ...}
+    </div>
+- trigger: bs3-alert:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="alert alert-info">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>${1:Title!}</strong> ${2:Alert body ...}
+    </div>
+- trigger: bs3-alert:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>${1:Title!}</strong> ${2:Alert body ...}
+    </div>
+- trigger: bs3-alert:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>${1:Title!}</strong> ${2:Alert body ...}
+    </div>
+- trigger: bs3-alert
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>${1:Title!}</strong> ${2:Alert body ...}
+    </div>
+- trigger: bs3-badge
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <span class="badge">${1:Badge}</span>
+- trigger: bs3-block-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-${3:large} btn-block btn-danger">${4:button} </${1:button}>
+- trigger: bs3-block-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-${3:large} btn-block btn-default">${4:button}</${1:button}>
+- trigger: bs3-block-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-${3:large} btn-block btn-{2:default} disabled">${4:button}</${1:button}>
+- trigger: bs3-block-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+        <${1:button} ${2:type="button"} class="btn btn-${3:large} btn-block btn-info">${4:button}</${1:button}>
+- trigger: bs3-block-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+        <${1:button} ${2:type="button"} class="btn btn-${3:large} btn-block btn-primary">${4:button}</${1:button}>
+- trigger: bs3-block-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+        <${1:button} ${2:type="button"} class="btn btn-${3:large} btn-block btn-success">${4:button}</${1:button}>
+- trigger: bs3-block-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-${3:large} btn-block btn-warning">${4:button}</${1:button}>
+- trigger: bs3-block-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-${3:large} btn-block btn-default">${4:button}</${1:button}>
+- trigger: bs3-block-link-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-large btn-block btn-danger" href="#" role="button">button</a>
+- trigger: bs3-block-link-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-large btn-block btn-default" href="#" role="button">button</a>
+- trigger: bs3-block-link-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-large btn-block btn-default disabled" href="#" role="button">button</a>
+- trigger: bs3-block-link-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-large btn-block btn-info" href="#" role="button">button</a>
+- trigger: bs3-block-link-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-large btn-block btn-primary" href="#" role="button">button</a>
+- trigger: bs3-block-link-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-large btn-block btn-success" href="#" role="button">button</a>
+- trigger: bs3-block-link-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-large btn-block btn-warning" href="#" role="button">button</a>
+- trigger: bs3-block-link-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-large btn-block btn-default" href="#" role="button">button</a>
+- trigger: bs3-breadcrumbs
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <ol class="breadcrumb">
+        <li>
+            <a href="${1:#}">${2:Home}</a>
+        </li>
+        ${3:<li>
+            <a href="#">Link</a>
+        </li>}
+        <li class="active">${4:Current}</li>
+    </ol>
+- trigger: bs3-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-danger">${3:button}</${1:button}>
+- trigger: bs3-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-default">${3:button}</${1:button}>
+- trigger: bs3-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-${3:primary} disabled">${4:button}</${1:button}>
+- trigger: bs3-group:vertical
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="btn-group-vertical">
+        <${1:button} ${2:type="button"} class="btn btn-default">Top</${1:button}>
+        <${1:button} ${2:type="button"} class="btn btn-default">Middle</${1:button}>
+        <${1:button} ${2:type="button"} class="btn btn-default">Bottom</${1:button}>
+    </div>
+- trigger: bs3-group
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="btn-group">
+        <${1:button} ${2:type="button"} class="btn btn-default">Left</${1:button}>
+        <${1:button} ${2:type="button"} class="btn btn-default">Middle</${1:button}>
+        <${1:button} ${2:type="button"} class="btn btn-default">Right</${1:button}>
+    </div>
+- trigger: bs3-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-info">${3:button}</${1:button}>
+- trigger: bs3-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-primary">${3:button}</${1:button}>
+- trigger: bs3-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-success">${3:button}</${1:button}>
+- trigger: bs3-toolbar
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="btn-toolbar">
+        <div class="btn-group"></div>
+        <div class="btn-group"></div>
+        <div class="btn-group"></div>
+    </div>
+- trigger: bs3-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-warning">${3:button}</${1:button}>
+- trigger: bs3-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-default">${3:button}</${1:button}>
+- trigger: bs3-carousel
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div id="${1:carousel-id}" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#${1:carousel-id}" data-slide-to="0" class=""></li>
+            <li data-target="#${1:carousel-id}" data-slide-to="1" class=""></li>
+            <li data-target="#${1:carousel-id}" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item">
+                <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojN2E3YTdhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Example headline.</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNmE2YTZhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item active">
+                <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNWE1YTVhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#${1:carousel-id}" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#${1:carousel-id}" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+- trigger: bs3-cdn:css
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/${1:3.3.4}/css/bootstrap.min.css">
+- trigger: bs3-cdn:js
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <!-- Latest compiled and minified JS -->
+    ${1:<script src="//code.jquery.com/jquery.js"></script>}
+    <script src="//netdna.bootstrapcdn.com/bootstrap/${1:3.3.4}/js/bootstrap.min.js"></script>
+- trigger: bs3-cdn
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/${1:3.3.4}/css/bootstrap.min.css">
+    ${2:<script src="//code.jquery.com/jquery.js"></script>}
+    <script src="//netdna.bootstrapcdn.com/bootstrap/${1:3.3.4}/js/bootstrap.min.js"></script>
+- trigger: bs3-clearfix
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="clearfix">
+
+    </div>
+- trigger: bs3-col:1
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        ${0}
+    </div>
+- trigger: bs3-col:10
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        ${0}
+    </div>
+- trigger: bs3-col:11
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+        ${0}
+    </div>
+- trigger: bs3-col:12
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        ${0}
+    </div>
+- trigger: bs3-col:2
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        ${0}
+    </div>
+- trigger: bs3-col:3
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        ${0}
+    </div>
+- trigger: bs3-col:4
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        ${0}
+    </div>
+- trigger: bs3-col:5
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+        ${0}
+    </div>
+- trigger: bs3-col:6
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        ${0}
+    </div>
+- trigger: bs3-col:7
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+        ${0}
+    </div>
+- trigger: bs3-col:8
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        ${0}
+    </div>
+- trigger: bs3-col:9
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+        ${0}
+    </div>
+- trigger: bs3-col
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="${2:col-xs-${1}} ${3:col-sm-${1}} ${4:col-md-${1}} ${5:col-lg-${1}}">
+        ${0}
+    </div>
+- trigger: bs3-container
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="container">
+        ${0}
+    </div>
+- trigger: bs3-form:horizontal
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <form action="${1}" method="${2:POST}" class="form-horizontal" role="form">
+            <div class="form-group">
+                <legend>${3:Form title}</legend>
+            </div>
+
+            ${0}
+
+            <div class="form-group">
+                <div class="col-sm-10 col-sm-offset-2">
+                    <button type="submit" class="btn btn-primary">${4:Submit}</button>
+                </div>
+            </div>
+    </form>
+- trigger: bs3-form:inline
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <form action="${1}" method="${2:POST}" class="form-inline" role="form">
+
+        ${3:<div class="form-group">
+            <label class="sr-only" for="">label</label>
+            <input type="email" class="form-control" id="" placeholder="Input field">
+        </div>}
+
+        ${0}
+
+        <button type="submit" class="btn btn-primary">${4:Submit}</button>
+    </form>
+- trigger: bs3-form:label
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <label for="${1:input-id}" ${2:class="col-sm-2"}>${3}</label>
+- trigger: bs3-form
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <form action="${1}" method="${2:POST}" role="form">
+        <legend>${3:Form title}</legend>
+
+        <div class="form-group">
+            <label for="">${4:label}</label>
+            <input type="text" class="form-control" id="" placeholder="Input field">
+        </div>
+
+        ${0}
+
+        <button type="submit" class="btn btn-primary">${5:Submit}</button>
+    </form>
+- trigger: bs3-template:html5
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <!DOCTYPE html>
+    <html lang="${1}">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>${2:Title Page}</title>
+
+            <!-- Bootstrap CSS -->
+            <link href="${3://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css}" rel="stylesheet">
+
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+        </head>
+        <body>
+            <h1 class="text-center">${6:Hello World}</h1>
+
+            <!-- jQuery -->
+            <script src="${4://code.jquery.com/jquery.js}"></script>
+            <!-- Bootstrap JavaScript -->
+            <script src="${5://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js}"></script>
+        </body>
+    </html>
+- trigger: bs3-icon:glyphicon
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <span class="glyphicon glyphicon-${1:icon}" aria-hidden="true"></span>
+- trigger: bs3-icon
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <i class="fa fa-${1:name}${2:-${3:shape}${4:-${5:o}${6:-${7:direction}}}}"></i>
+- trigger: bs3-image
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <img src="${1:#}" ${2:class="img-responsive"} alt="${3:Image}">
+- trigger: bs3-input:checkbox
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="checkbox">
+    <label>
+        <input type="checkbox" value="${1}">
+        ${2:Checkbox}
+    </label>
+    </div>
+- trigger: bs3-input:color:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="color" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:title="${8}"}>
+        </div>
+    </div>
+- trigger: bs3-input:color
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="color" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+- trigger: bs3-input:date:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="date" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:title="${8}"}>
+        </div>
+    </div>
+- trigger: bs3-input:date
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="date" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+- trigger: bs3-input:email:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="email" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:title="${8}"}>
+        </div>
+    </div>
+- trigger: bs3-input:email
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="email" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+- trigger: bs3-input-group:addon:text
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="input-group">
+        <div class="input-group-addon">${1:\$}</div>
+        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+    </div>
+- trigger: bs3-input-group-addon
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="input-group-addon">${1:\$}</div>
+- trigger: bs3-input-group-btn
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <span class="input-group-btn">
+        <button type="button" class="btn btn-default">Go!</button>
+    </span>
+- trigger: bs3-input-group:text:btn
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="input-group">
+        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Search">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default">Go!</button>
+        </span>
+    </div>
+- trigger: bs3-input-group
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="input-group">
+        ${0}
+    </div>
+- trigger: bs3-input:hidden
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="hidden" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"}>
+- trigger: bs3-input:label
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+  <label for="${1:input-id}" ${2:class="col-sm-2"}>${3}</label>
+- trigger: bs3-input:month:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+    <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+    <div class="col-${3:sm-10}">
+        <input type="month" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:title="${8}"}>
+    </div>
+    </div>
+- trigger: bs3-input:month
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="month" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+- trigger: bs3-input:number:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+    <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+    <div class="col-${3:sm-10}">
+    <input type="number" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${5:min="{6}"} ${7:max="${8}"} ${9:step="${10}"} ${11:required="required"} ${12:title="${13}"}>
+    </div>
+    </div>
+- trigger: bs3-input:number
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="number" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:min="{5}"} ${6:max="${7}"} ${8:step="${9}"} ${10:required="required"} ${11:title="${12}"}>
+- trigger: bs3-input:password:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="password" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:required="required"} ${5:title="${6}"}>
+        </div>
+    </div>
+- trigger: bs3-input:password
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="password" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:required="required"} ${3:title="${4}"}>
+- trigger: bs3-input:radio
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="radio">
+        <label>
+            <input type="radio" name="${1}" id="input${1/(\w+)/\u\1/g}" value="${2}" ${3:checked="checked"}>
+            ${4:Radio Box}
+        </label>
+    </div>
+- trigger: bs3-input:range:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="range" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${5:min="{6}"} ${7:max="${8}"} ${9:step="${10}"} ${11:required="required"} ${12:title="${13}"}>
+        </div>
+    </div>
+- trigger: bs3-input:range
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="range" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:min="{5}"} ${6:max="${7}"} ${8:step="${9}"} ${10:required="required"} ${11:title="${12}"}>
+- trigger: bs3-input:reset:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <div class="col-sm-${1:10} col-offset-${2:2}">
+            <input type="reset" value="${3:Reset}" class="btn btn-default">
+        </div>
+    </div>
+- trigger: bs3-input:reset
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="reset" value="${1:Reset}" class="btn btn-default">
+- trigger: bs3-input:search:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="search" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:title="${8}"}>
+        </div>
+    </div>
+- trigger: bs3-input:search
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="search" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+- trigger: bs3-input:select:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <select name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control">
+                <option value="">${4:-- Select One --}</option>
+            </select>
+        </div>
+    </div>
+- trigger: bs3-input:select
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <select name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control">
+        <option value="">${2:-- Select One --}</option>
+    </select>
+- trigger: bs3-input:submit:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <div class="col-${3:sm-10} col-offset-2">
+            <button type="submit" class="btn btn-primary">${5:Submit}</button>
+        </div>
+    </div>
+- trigger: bs3-input:submit
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <button type="submit" class="btn btn-primary">${5:Submit}</button>
+- trigger: bs3-input:tel:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="tel" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:title="${8}"}>
+        </div>
+    </div>
+- trigger: bs3-input:tel
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="tel" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+- trigger: bs3-input:text:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+	<div class="col-${3:sm-10}">
+		<input type="text" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:pattern="${8}"} ${9:title="${10}"}>
+	</div>
+</div>
+- trigger: bs3-input:text
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="text" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:pattern="${6}"} ${7:title="${8}"}>
+- trigger: bs3-input:time:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="time" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:title="${8}"}>
+        </div>
+    </div>
+- trigger: bs3-input:time
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="time" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+- trigger: bs3-input:url:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="url" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:title="${8}"}>
+        </div>
+    </div>
+- trigger: bs3-input:url
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="url" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+- trigger: bs3-input:week:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <input type="week" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${4:value="${5}"} ${6:required="required"} ${7:title="${8}"}>
+        </div>
+    </div>
+- trigger: bs3-input:week
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <input type="week" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+- trigger: bs3-jumbotron
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="jumbotron">
+        <div class="container">
+            <h1>${1:Hello, world!}</h1>
+            <p>${2:Contents ...}</p>
+            <p>
+                <a class="btn btn-primary btn-lg">${3:Learn more}</a>
+            </p>
+        </div>
+    </div>
+- trigger: bs3-label:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <span class="label label-danger">${1:Label}</span>
+- trigger: bs3-label:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <span class="label label-default">${1:Label}</span>
+- trigger: bs3-label:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <span class="label label-info">${1:Label}</span>
+- trigger: bs3-label:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <span class="label label-success">${1:Label}</span>
+- trigger: bs3-label:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <span class="label label-warning">${1:Label}</span>
+- trigger: bs3-label
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <span class="label">${1:Label}</span>
+- trigger: bs3-lg-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-lg btn-danger">${3:button}</${1:button}>
+- trigger: bs3-lg-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-lg btn-default">${3:button}</${1:button}>
+- trigger: bs3-lg-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-lg btn-${3:default} disabled">${4:button}</${1:button}>
+- trigger: bs3-lg-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-lg btn-info">${3:button}</${1:button}>
+- trigger: bs3-lg-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-lg btn-primary">${3:button}</${1:button}>
+- trigger: bs3-lg-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-lg btn-success">${3:button}</${1:button}>
+- trigger: bs3-lg-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-lg btn-warning">${3:button}</${1:button}>
+- trigger: bs3-lg-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-lg btn-default">${3:button}</${1:button}>
+- trigger: bs3-lg-link-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-lg btn-danger" href="#" role="button">button</a>
+- trigger: bs3-lg-link-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-lg btn-default" href="#" role="button">button</a>
+- trigger: bs3-lg-link-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-lg btn-default disabled" href="#" role="button">button</a>
+- trigger: bs3-lg-link-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-lg btn-info" href="#" role="button">button</a>
+- trigger: bs3-lg-link-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-lg btn-primary" href="#" role="button">button</a>
+- trigger: bs3-lg-link-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-lg btn-success" href="#" role="button">button</a>
+- trigger: bs3-lg-link-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-lg btn-warning" href="#" role="button">button</a>
+- trigger: bs3-lg-link-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-lg btn-default" href="#" role="button">button</a>
+- trigger: bs3-link-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-danger" href="#" role="button">button</a>
+- trigger: bs3-link-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-default" href="#" role="button">button</a>
+- trigger: bs3-link-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-primary disabled" href="#" role="button">button</a>
+- trigger: bs3-link-group:vertical
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="btn-group-vertical">
+        <a class="btn btn-default" href="#" role="button">Top</a>
+        <a class="btn btn-default" href="#" role="button">Middle</a>
+        <a class="btn btn-default" href="#" role="button">Bottom</a>
+    </div>
+- trigger: bs3-link-group
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="btn-group">
+        <a class="btn btn-default" href="#" role="button">Left</a>
+        <a class="btn btn-default" href="#" role="button">Middle</a>
+        <a class="btn btn-default" href="#" role="button">Right</a>
+    </div>
+- trigger: bs3-link-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-info" href="#" role="button">button</a>
+- trigger: bs3-link-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-primary" href="#" role="button">button</a>
+- trigger: bs3-link-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-success" href="#" role="button">button</a>
+- trigger: bs3-link-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-warning" href="#" role="button">button</a>
+- trigger: bs3-link-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-default" href="#" role="button">button</a>
+- trigger: bs3-list-group:badges
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <ul class="list-group">
+        <li class="list-group-item">
+            <span class="badge">5</span>
+            Item 1
+        </li>
+        <li class="list-group-item">
+            <span class="badge">10</span>
+            Item 2
+        </li>
+        <li class="list-group-item">
+            <span class="badge">15</span>
+            Item 3
+        </li>
+    </ul>
+- trigger: bs3-list-group:content
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">${1:List group item heading}</h4>
+            <p class="list-group-item-text">${2:Content goes here}</p>
+        </a>
+    </div>
+- trigger: bs3-list-group:linked
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="list-group">
+    <a href="#" class="list-group-item active">Item 1</a>
+    <a href="#" class="list-group-item">Item 2</a>
+    <a href="#" class="list-group-item">Item 3</a>
+    </div>
+- trigger: bs3-list-group
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <ul class="list-group">
+        <li class="list-group-item">Item 1</li>
+        <li class="list-group-item">Item 2</li>
+        <li class="list-group-item">Item 3</li>
+    </ul>
+- trigger: bs3-local
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <!-- Local bootstrap CSS & JS -->
+    <link rel="stylesheet" media="screen" href="${1:bootstrap.min.css}">
+    ${2:<script src="jquery.js"></script>}
+    <script src="${3:bootstrap.min.js}"></script>
+- trigger: bs3-media-object
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="media">
+        <a class="pull-left" href="${1:#}">
+            <img class="media-object" src="${2:#}" alt="${3:Image}">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">${4:Media heading}</h4>
+            <p>${5:Text goes here...}</p>
+        </div>
+    </div>
+- trigger: bs3-xs-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-xs btn-danger">${3:button}</${1:button}>
+- trigger: bs3-xs-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-xs btn-default">${3:button}</${1:button}>
+- trigger: bs3-xs-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-xs btn-${3:default} disabled">${4:button}</${1:button}>
+- trigger: bs3-xs-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-xs btn-info">${3:button}</${1:button}>
+- trigger: bs3-xs-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-xs btn-primary">${3:button}</${1:button}>
+- trigger: bs3-xs-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-xs btn-success">${3:button}</${1:button}>
+- trigger: bs3-xs-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-xs btn-warning">${3:button}</${1:button}>
+- trigger: bs3-xs-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-xs btn-default">${3:button}</${1:button}>
+- trigger: bs3-xs-link-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-xs btn-danger" href="#" role="button">button</a>
+- trigger: bs3-xs-link-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-xs btn-default" href="#" role="button">button</a>
+- trigger: bs3-xs-link-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-xs btn-default disabled" href="#" role="button">button</a>
+- trigger: bs3-xs-link-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-xs btn-info" href="#" role="button">button</a>
+- trigger: bs3-xs-link-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-xs btn-primary" href="#" role="button">button</a>
+- trigger: bs3-xs-link-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-xs btn-success" href="#" role="button">button</a>
+- trigger: bs3-xs-link-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-xs btn-warning" href="#" role="button">button</a>
+- trigger: bs3-xs-link-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-xs btn-default" href="#" role="button">button</a>
+- trigger: bs3-modal
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    ${1:<a class="btn btn-primary" data-toggle="modal" href='#${2:modal-id}'>Trigger modal</a>}
+    <div class="modal fade" id="${2:modal-id}">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">${3:Modal title}</h4>
+                </div>
+                <div class="modal-body">
+                    ${0}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">${4:Close}</button>
+                    <button type="button" class="btn btn-primary">${5:Save changes}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+- trigger: bs3-navbar:basic
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="navbar">
+        <a class="navbar-brand" href="#">${1:Title}</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#">${2:Home}</a>
+            </li>
+            <li>
+                <a href="#">${3:Link}</a>
+            </li>
+        </ul>
+    </div>
+- trigger: bs3-navbar:brand
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="navbar-brand" href="${1:/}">${2:Title}</a>
+- trigger: bs3-navbar:fixed-bottom
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <a class="navbar-brand" href="${1:#}">${2:Title}</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#">${3:Home}</a>
+            </li>
+            <li>
+                <a href="#">${4:Link}</a>
+            </li>
+        </ul>
+    </nav>
+- trigger: bs3-navbar:fixed-top
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <a class="navbar-brand" href="${1:#}">${2:Title}</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#">${3:Home}</a>
+            </li>
+            <li>
+                <a href="#">${4:Link}</a>
+            </li>
+        </ul>
+    </nav>
+- trigger: bs3-navbar:form
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <form class="navbar-form pull-${1:right}">
+        <input type="text" style="width: 200px;">
+        <button type="submit" class="btn btn-${2:default}">${3:Submit}</button>
+    </form>
+- trigger: bs3-navbar:inverse
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <nav class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#">${1:Title}</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#">${2:Home}</a>
+            </li>
+            <li>
+                <a href="#">${3:Link}</a>
+            </li>
+        </ul>
+    </nav>
+- trigger: bs3-navbar:link
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <p class="navbar-text pull-${1:right}">
+        <a href="${2:#}" class="navbar-link">${3:Links}</a>
+    </p>
+- trigger: bs3-navbar:links
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <ul class="nav navbar-nav">
+        <li class="active">
+            <a href="${1:#}">${2:Home}</a>
+        </li>
+        <li>
+            <a href="${3:#}">${4:Link}</a>
+        </li>
+    </ul>
+- trigger: bs3-navbar:responsive
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="${1:#}">${2:Title}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+- trigger: bs3-navbar:static-top
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <a class="navbar-brand" href="${1:#}">${2:Title}</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#">${3:Home}</a>
+            </li>
+            <li>
+                <a href="#">${4:Link}</a>
+            </li>
+        </ul>
+    </nav>
+- trigger: bs3-navbar:text
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <p class="navbar-text">${1:Navbar text}</p>
+- trigger: bs3-navbar
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="${1:#}">${2:Title}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+- trigger: bs3-page-header
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="page-header">
+      <h1>${1:title}<small>${2:subtext}</small></h1>
+    </div>
+- trigger: bs3-pager:aligned
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <ul class="pager">
+    <li class="previous"><a href="#">&larr; Older</a></li>
+    <li class="next"><a href="#">Newer &rarr;</a></li>
+    </ul>
+- trigger: bs3-pager
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <ul class="pager">
+        <li><a href="#">Previous</a></li>
+        <li><a href="#">Next</a></li>
+    </ul>
+- trigger: bs3-pagination:lg
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <ul class="pagination pagination-lg">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+- trigger: bs3-pagination:sm
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <ul class="pagination pagination-sm">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+- trigger: bs3-pagination
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+- trigger: bs3-panel:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="panel panel-${1:danger}">
+      <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+            ${2:Panel content}
+      </div>
+    </div>
+- trigger: bs3-panel:footer
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="panel panel-default">
+          <div class="panel-body">
+                ${1:Panel content}
+          </div>
+          <div class="panel-footer">
+                ${2:Panel footer}
+            </div>
+    </div>
+- trigger: bs3-panel:heading
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="panel panel-${1:default}">
+    <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+    </div>
+    <div class="panel-body">
+        ${2:Panel content}
+    </div>
+    </div>
+- trigger: bs3-panel:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="panel panel-${1:info}">
+          <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body">
+                ${2:Panel content}
+          </div>
+    </div>
+- trigger: bs3-panel:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="panel panel-${1:primary}">
+          <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body">
+                ${2:Panel content}
+          </div>
+    </div>
+- trigger: bs3-panel:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="panel panel-${1:success}">
+          <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body">
+                ${2:Panel content}
+          </div>
+    </div>
+- trigger: bs3-panel:table
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="panel panel-${1:default}">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+            <div class="panel-body">
+                <p>Text goes here...</p>
+            </div>
+
+            <!-- Table -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>${2:Heading 1}</th>
+                    </tr>
+                    <tr>
+                        <th>${3:Heading 2}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>${4:Content 1}</td>
+                    </tr>
+                    <tr>
+                        <td>${5:Content 2}</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+- trigger: bs3-panel:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="panel panel-${1:warning}">
+          <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body">
+                ${2:Panel content}
+          </div>
+    </div>
+- trigger: bs3-panel
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="panel panel-${1:default}">
+        <div class="panel-body">
+           ${2:Basic panel example}
+        </div>
+    </div>
+- trigger: bs3-row-col
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="row">
+        <div class="${2:col-xs-${1}} ${3:col-sm-${1}} ${4:col-md-${1}} ${5:col-lg-${1}}">
+            ${0}
+        </div>
+    </div>
+- trigger: bs3-row
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="row">
+    ${0}
+    </div>
+- trigger: bs3-select:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="input${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${2:sm-10}">
+            <select name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${3:required="required"}>
+                <option value="">${0}</option>
+            </select>
+        </div>
+    </div>
+- trigger: bs3-select
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <select name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:required="required"}>
+        <option value="">${0}</option>
+    </select>
+- trigger: bs3-sm-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-sm btn-danger">${3:button}</${1:button}>
+- trigger: bs3-sm-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-sm btn-default">${3:button}</${1:button}>
+- trigger: bs3-sm-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-sm btn-${3:default} disabled">${4:button}</${1:button}>
+- trigger: bs3-sm-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-sm btn-info">${3:button}</${1:button}>
+- trigger: bs3-sm-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-sm btn-primary">${3:button}</${1:button}>
+- trigger: bs3-sm-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-sm btn-success">${3:button}</${1:button}>
+- trigger: bs3-sm-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-sm btn-warning">${3:button}</${1:button}>
+- trigger: bs3-sm-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <${1:button} ${2:type="button"} class="btn btn-sm btn-default">${3:button}</${1:button}>
+- trigger: bs3-sm-link-button:danger
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-sm btn-danger" href="#" role="button">button</a>
+- trigger: bs3-sm-link-button:default
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-sm btn-default" href="#" role="button">button</a>
+- trigger: bs3-sm-link-button:disabled
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-sm btn-default disabled" href="#" role="button">button</a>
+- trigger: bs3-sm-link-button:info
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-sm btn-info" href="#" role="button">button</a>
+- trigger: bs3-sm-link-button:primary
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-sm btn-primary" href="#" role="button">button</a>
+- trigger: bs3-sm-link-button:success
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-sm btn-success" href="#" role="button">button</a>
+- trigger: bs3-sm-link-button:warning
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-sm btn-warning" href="#" role="button">button</a>
+- trigger: bs3-sm-link-button
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <a class="btn btn-sm btn-default" href="#" role="button">button</a>
+- trigger: bs3-table:bordered
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+        <table class="table table-bordered ${1:table-hover}">
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+- trigger: bs3-table:condensed
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <table class="table table-condensed ${1:table-hover}">
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+- trigger: bs3-table:hover
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+- trigger: bs3-table:responsive
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="table-responsive">
+        <table class="table${1: table-hover}">
+            <thead>
+                <tr>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+- trigger: bs3-table:striped
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <table class="table table-striped ${1:table-hover}">
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+- trigger: bs3-table
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <table class="table${1: table-hover}">
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+- trigger: bs3-tabs
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div role="tabpanel">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#${1:home}" aria-controls="${1:home}" role="tab" data-toggle="tab">${1:home}</a>
+            </li>
+            <li role="presentation">
+                <a href="#${2:tab}" aria-controls="${2:tab}" role="tab" data-toggle="tab">${2:tab}</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="${1:home}">...</div>
+            <div role="tabpanel" class="tab-pane" id="${2:tab}">...</div>
+        </div>
+    </div>
+- trigger: bs3-textarea:h
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="form-group">
+        <label for="textarea${1/(\w+)/\u\1/g}" class="col-${2:sm-2} control-label">${1/(\w+)/\u\1/g}:</label>
+        <div class="col-${3:sm-10}">
+            <textarea name="${1}" id="textarea${1/(\w+)/\u\1/g}" class="form-control" rows="${4:3}" ${5:required="required"}>${6}</textarea>
+        </div>
+    </div>
+- trigger: bs3-textarea
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <textarea name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" rows="${2:3}" ${3:required="required"}>${4}</textarea>
+- trigger: bs3-thumbnail:content
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-${1:3} col-sm-${1:3} col-md-${1:3} col-lg-${1:3}">
+        <div class="thumbnail">
+            <img data-src="${2:#}" alt="${3}">
+            <div class="caption">
+                <h3>${4:Title}</h3>
+                <p>
+                    ${5:...}
+                </p>
+                <p>
+                    <a href="${6:#}" class="btn btn-primary">${7:Action}</a>
+                    <a href="${8:#}" class="btn btn-default">${9:Action}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+- trigger: bs3-thumbnail
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="col-xs-${1:3} col-sm-${1:3} col-md-${1:3} col-lg-${1:3}">
+        <a href="${2:#}" class="thumbnail">
+            <img data-src="${3:#}" alt="${4}">
+        </a>
+    </div>
+- trigger: bs3-well:lg
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="well well-lg">
+        ${0}
+    </div>
+- trigger: bs3-well:sm
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="well well-sm">
+        ${0}
+    </div>
+- trigger: bs3-well
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    <div class="well">
+        ${0}
+    </div>
