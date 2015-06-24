@@ -823,3 +823,119 @@
   description: url encode
   text: |
         arsort(${1:array})
+
+- trigger: angular
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 angular- trigger: config
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    config([${1/(?:.+)/'/g}${1/,[ ]*/', '/g}${1/(?:.+)/', /g}function ($1) {
+        $0
+    }])
+- trigger: constant
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    constant('${1:name}', ${2:value})
+- trigger: controller
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    controller('${1:Name}Ctrl', [${2/(?:.+)/'/g}${2/,[ ]*/', '/g}${2/(?:.+)/', /g}function (${2:\$scope}) {
+        $0
+    }])
+- trigger: decorator
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+        decorator('${1:name}', [${2/(?:.+)/'/g}${2/,[ ]*/', '/g}${2/(?:.+)/', /g}function (${2:\$provide}) {
+            \$provide.decorator('${3:name}', [${4/(?:.+)/'/g}${4/,[ ]*/', '/g}${4/(?:.+)/', /g}function(${4:\$delegate}) {
+                return ${5:\$delegate}$0;
+            }]);
+        }])
+- trigger: directive
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+        directive('${1:name}', [${2/(?:.+)/'/g}${2/,[ ]*/', '/g}${2/(?:.+)/', /g}function ($2) {
+            return {
+                restrict: '${3:A}',
+                link: function (scope, iElement, iAttrs) {
+                    $0
+                }
+            };
+        }])
+- trigger: directivelong
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+        directive('${1:name}', [${2/(?:.+)/'/g}${2/,[ ]*/', '/g}${2/(?:.+)/', /g}function ($2) {
+            return {$0
+        ${3:		priority: 0,}
+        ${4:		template: '<div></div>',}
+        ${5:		templateUrl: 'directive.html',}
+        ${6:		replace: true,}
+        ${7:		transclude: true,}
+        ${8:		restrict: 'A',}
+        ${9:		scope: \{\},}
+        ${10:		controller: function(\$scope, \$element, \$attrs, \$transclude, otherInjectables) \{
+
+                \},}
+        ${11:		compile: function compile(tElement, tAttrs, transclude) \{
+                    return function postLink(scope, iElement, iAttrs, controller) \{
+
+                    \}
+                \},}
+        ${12:		link: function postLink(scope, iElement, iAttrs) \{
+
+                \}}
+            };
+        }])
+- trigger: factory
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+        factory('${1:name}', [${2/(?:.+)/'/g}${2/,[ ]*/', '/g}${2/(?:.+)/', /g}function ($2) {
+            $0
+
+            return {
+
+            };
+        }])
+- trigger: otherwise
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 otherwise(${1:{ redirectTo: '/${2:route}' \}})- trigger: provider
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+        provider('${1:name}', [${2/(?:.+)/'/g}${2/,[ ]*/', '/g}${2/(?:.+)/', /g}function ($2) {
+            $0
+
+            this.\$get = [${3/(?:.+)/'/g}${3/,[ ]*/', '/g}${3/(?:.+)/', /g}function($3) {
+                return {
+
+                };
+            }];
+        }])
+- trigger: run
+  scope: html
+  description:
+  tagHide: true
+  text: | 	 
+    run([${1/(?:.+)/'/g}${1/,[ ]*/', '/g}${1/(?:.+)/', /g}function ($1) {
+        $0
+    }])
+
