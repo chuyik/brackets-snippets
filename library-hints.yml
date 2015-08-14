@@ -476,6 +476,106 @@
         }, ${1:delay});
 
 # ---
+# BackboneJS
+# From: davidbarredo
+# ---
+- trigger: bbview
+  scope: javascript
+  description: View
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        var ${1:viewName} = Backbone.View.extend({
+          initialize: function (${2:options}) {},
+          render: function () {
+
+            return this;
+          }
+        });
+
+- trigger: bbmodel
+  scope: javascript
+  description: Model
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        var ${1:modelName} = Backbone.Model.extend({
+          idAttribute: '${2:id}',
+          defaults: {
+            ${3}
+          },
+          validate: function(attrs, options) {}
+        });
+
+- trigger: modeltojson
+  scope: javascript
+  description: Model to JSON
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        ${1:collection}.toJSON(${2:options});${3}
+
+- trigger: modelget
+  scope: javascript
+  description: Model set
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        ${1:model}.get('${2:attr}');${3}
+
+- trigger: modelset
+  scope: javascript
+  description: Model get
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        ${1:model}.set({${2:attr}: '${3:value}'});${4}
+
+- trigger: modelsave
+  scope: javascript
+  description: Model save
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        ${1:model}.save({${2:attr}: '${3:value}'});${4}
+
+- trigger: bbcollection
+  scope: javascript
+  description: Collection
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        var ${1:collectionName} = Backbone.Collection.extend({
+          model: '${2:model}',
+          url: '${3}',
+          comparator: '${4:comparator}'
+        });
+
+- trigger: collectiontojson
+  scope: javascript
+  description: Collection to JSON
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        ${1:collection}.toJSON(${2:options});${3}
+
+- trigger: listento
+  scope: javascript
+  description: Listen to
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        ${1:object}.listenTo(${2:other}, ${3:event}, ${2:callback})
+
+- trigger: listentoonce
+  scope: javascript
+  description: Listen to once
+  tag: BackboneJS
+  tagHide: true
+  text: |
+        ${1:object}.listenToOnce(${2:other}, ${3:event}, ${2:callback})
+
+# ---
 # AngularJS
 # From: myself
 # ---
@@ -1129,4 +1229,3 @@
         $form->render(${1:true | false});
         
 
-        
