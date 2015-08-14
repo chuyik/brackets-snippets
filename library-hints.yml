@@ -565,7 +565,7 @@
   tag: BackboneJS
   tagHide: true
   text: |
-        ${1:object}.listenTo(${2:other}, ${3:event}, ${2:callback})
+        ${1:object}.listenTo(${2:other}, ${3:event}, ${4:callback})
 
 - trigger: listentoonce
   scope: javascript
@@ -573,7 +573,7 @@
   tag: BackboneJS
   tagHide: true
   text: |
-        ${1:object}.listenToOnce(${2:other}, ${3:event}, ${2:callback})
+        ${1:object}.listenToOnce(${2:other}, ${3:event}, ${4:callback})
 
 # ---
 # AngularJS
