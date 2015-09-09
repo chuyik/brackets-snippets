@@ -4,16 +4,16 @@
 </span>
 
 <!-- Buttons -->
-<button class="btn" ng-if="!editingObj" ng-click="toLibrary()" ng-class="{active:isLibrary}">
+<button class="btn small" ng-if="!editingObj" ng-click="toLibrary()" ng-class="{active:isLibrary}">
   Library
 </button>
-<button class="btn" ng-if="!editingObj" ng-click="toSetting()" ng-class="{active:isSetting}">
+<button class="btn small" ng-if="!editingObj" ng-click="toSetting()" ng-class="{active:isSetting}">
   Settings
 </button>
-<button class="btn" ng-disabled="form.$invalid" ng-if="editingObj" ng-click="save(editingObj)" blink>
+<button class="btn small" ng-disabled="form.$invalid" ng-if="editingObj" ng-click="save(editingObj)" blink>
   Save <small ng-if="form.$invalid">(Fill in required data first)</small>
 </button>
-<button class="btn" ng-if="form.$valid && !originalObj && editingObj" ng-click="save(editingObj,true)">
+<button class="btn small" ng-if="form.$valid && !originalObj && editingObj" ng-click="save(editingObj,true)">
   Save and Create
 </button>
-<button class="btn" ng-if="editingObj" ng-click="cancelEdit()">Cancel</button>
+<button class="btn small" ng-if="editingObj" ng-click="cancelEdit()">Cancel</button>

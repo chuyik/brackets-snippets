@@ -30,8 +30,8 @@
     <label class="control-label">Import / Export</label>
     <div class="controls">
       <div>
-        <button class="btn" ng-click="togglePanel(0)" ng-class="{active:curPanel===0}">Import</button>
-        <button class="btn" ng-click="togglePanel(1)" ng-class="{active:curPanel===1}">Export</button>
+        <button class="btn small" ng-click="togglePanel(0)" ng-class="{active:curPanel===0}">Import</button>
+        <button class="btn small" ng-click="togglePanel(1)" ng-class="{active:curPanel===1}">Export</button>
       </div>
 
       <!-- Import Panel -->
@@ -61,7 +61,7 @@
             <span class="label label-important">Clean up</span> all existed snippets first
           </label>
         </div>
-        <div><button class="btn" ng-disabled="!(import.file&&import.type)" ng-click="importSnippets()">Start Import</button></div>
+        <div><button class="btn small" ng-disabled="!(import.file&&import.type)" ng-click="importSnippets()">Start Import</button></div>
       </div>
 
       <!-- Export Panel -->
@@ -78,7 +78,7 @@
           </label>
         </div>
 
-        <div><button class="btn" ng-disabled="!(export.type)" ng-click="exportSnippets()">Start Export</button></div>
+        <div><button class="btn small" ng-disabled="!(export.type)" ng-click="exportSnippets()">Start Export</button></div>
       </div>
     </div>
   </div>
@@ -86,7 +86,7 @@
   <div class="control-group">
     <label class="control-label">Reset</label>
     <div class="controls">
-      <button class="btn" ng-click="restoreDefault()">Restore default snippets</button>
+      <button class="btn small" ng-click="restoreDefault()">Restore default snippets</button>
     </div>
   </div>
 
