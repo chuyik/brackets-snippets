@@ -1,5 +1,5 @@
 /*jslint indent: 2, maxerr: 50 */
-/*global define, $, brackets, window, Mustache */
+/*global define, $, brackets */
 
 /**
  * Java​Script Snippets for Brackets
@@ -11,9 +11,7 @@ define(function (require, exports, module) {
   "use strict";
 
   var AppInit        = brackets.getModule('utils/AppInit'),
-      CommandManager = brackets.getModule("command/CommandManager"),
-      EditorManager  = brackets.getModule("editor/EditorManager"),
-      Menus          = brackets.getModule("command/Menus");
+      EditorManager  = brackets.getModule("editor/EditorManager");
 
   var Hinter = require('./lib/Hinter'),
       HintWidget = require('./widget/main');
@@ -53,7 +51,7 @@ define(function (require, exports, module) {
         keyup: hinter.keyUpHandler.bind(hinter),
         change: hinter.changeHandler.bind(hinter),
         cursorActivity: hinter.cursorActivityHandler.bind(hinter)
-      }
+      };
 
       focusedEditor
         .on("keydown", handlers.keydown)

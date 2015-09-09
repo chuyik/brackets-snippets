@@ -18,6 +18,7 @@ define(function (require, exports, module) {
       FileUtils        = brackets.getModule("file/FileUtils"),
       CommandManager   = brackets.getModule("command/CommandManager"),
       Commands         = brackets.getModule("command/Commands"),
+      Menus            = brackets.getModule("command/Menus"),
       HintManager      = require("../lib/HintManager");
 
   // Load HTML
@@ -36,7 +37,7 @@ define(function (require, exports, module) {
     BUTTON_ID: 'edc-brackets-snippets-btn'
   }
 
-  var $appButton, $appPanel;
+  var $appButton, $appPanel, togglePanelCmd;
 
   /**
    * Constructor to create a hints manager.
@@ -51,9 +52,17 @@ define(function (require, exports, module) {
     if (!hinter) { throw 'Hinter instance is required'; }
     this.setHinter(hinter);
 
+    var onTogglePanel = togglePanelHandler.bind(this),
+        viewMenu;
+
     // Insert Button
     $('#main-toolbar .buttons').append(ButtonHTML);
-    $appButton = $('#' + CONST.BUTTON_ID).on('click', togglePanelHandler.bind(this));
+    $appButton = $('#' + CONST.BUTTON_ID).on('click', onTogglePanel);
+
+    // add menu item entry
+    togglePanelCmd = CommandManager.register("Snippets Manager", "toggleSnippetsManager", onTogglePanel);
+    viewMenu = Menus.getMenu(Menus.AppMenuBar.VIEW_MENU);
+    viewMenu.addMenuItem(togglePanelCmd);
 
     this.initPanel();
   };
@@ -156,7 +165,10 @@ define(function (require, exports, module) {
   function togglePanelHandler () {
     Resizer.toggle($appPanel);
     $appButton.toggleClass('active');
-    if ($appButton.hasClass('active')) {
+
+    var isActive = $appButton.hasClass('active');
+
+    if (isActive) {
       // opened
       $(document).on('update-snippets', hintsUpdateHandler.bind(this));
       $(document).on('restore-snippets', hintsRestoreHandler.bind(this));
@@ -170,6 +182,8 @@ define(function (require, exports, module) {
       $(document).off('export-snippets');
       $(document).off('prefs-changed');
     }
+
+    togglePanelCmd.setChecked(isActive);
   }
 
   function hintsUpdateHandler (ev, snippets) {
