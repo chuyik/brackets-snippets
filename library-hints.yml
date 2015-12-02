@@ -1127,6 +1127,280 @@
   tagHide: true
   text: |
         $form->render(${1:true | false});
+
+# ---
+# Jasmine
+# ---
+- trigger: jdescribe
+  scope: javascript
+  description: New test suite
+  tag: Jasmine
+  text: |
+        describe('${1:testSuiteName}', function() {
+            ${2:specs}
+        });
         
+- trigger: jit
+  scope: javascript
+  description: New test spec
+  tag: Jasmine
+  text: |
+         it('${1:specName}', function() {
+            ${2:testContent}
+         });
+
+- trigger: jbe
+  scope: javascript
+  description: Expect to be
+  tag: Jasmine
+  text: |
+        expect(${1}).toBe(${2});
+
+- trigger: jeq
+  scope: javascript
+  description: Expect to be equal
+  tag: Jasmine
+  text: |
+        expect(${1}).toEqual(${2});
+        
+- trigger: jmatch
+  scope: javascript
+  description: Expect to match (regex)
+  tag: Jasmine
+  text: |
+        expect(${1}).toMatch(${2});
+        
+- trigger: jdef
+  scope: javascript
+  description: Expect to be defined
+  tag: Jasmine
+  text: |
+        expect(${1}).toBeDefined();
+        
+- trigger: jundef
+  scope: javascript
+  description: Expect to be undefined
+  tag: Jasmine
+  text: |
+        expect(${1}).toBeUndefined();
+        
+- trigger: jnull
+  scope: javascript
+  description: Expect to be null
+  tag: Jasmine
+  text: |
+        expect(${1}).toBeNull();
+        
+- trigger: jtruthy
+  scope: javascript
+  description: Expect to be truthy
+  tag: Jasmine
+  text: |
+        expect(${1}).toBeTruthy();
+        
+- trigger: jfalsy
+  scope: javascript
+  description: Expect to be falsy
+  tag: Jasmine
+  text: |
+        expect(${1}).toBeFalsy();
+        
+- trigger: jcontain
+  scope: javascript
+  description: Expect to contain
+  tag: Jasmine
+  text: |
+        expect(${1:array}).toContain(${2:var});
+        
+- trigger: jlt
+  scope: javascript
+  description: Expect to be less than (mathematical comparison)
+  tag: Jasmine
+  text: |
+        expect(${1}).toBeLessThan(${2});
+        
+- trigger: jgt
+  scope: javascript
+  description: Expect to be greater than (mathematical comparison)
+  tag: Jasmine
+  text: |
+        expect(${1}).toBeGreaterThan(${2});
+        
+- trigger: jcloseto
+  scope: javascript
+  description: Expect to be close to (in terms of defined precision)
+  tag: Jasmine
+  text: |
+        expect(${1:num}).toBeCloseTo(${2:num}, ${3:precision});
+        
+- trigger: jthrow
+  scope: javascript
+  description: Expect to throw exception
+  tag: Jasmine
+  text: |
+        expect(${1}).toThrow();
+        
+- trigger: jmatcher
+  scope: javascript
+  description: Add custom matcher
+  tag: Jasmine
+  text: |
+        beforeEach(function() {
+            this.addMatchers({
+                ${1:matcherName}: function(expected) {
+                    // compare this.actual against expected
+                    var pass = ${2:passCondition}
+                    if (pass) {
+                        // message if the pass constraint is true but negated
+                        this.message = '${3:message}';
+                    } else {
+                        // message if the pass constraint is true
+                        this.message = '${4:message}';
+                    }
+                    return pass;
+                }
+            });
+        });
+        
+- trigger: jbeforeeach
+  scope: javascript
+  description: Add setup
+  tag: Jasmine
+  text: |
+        beforeEach(function() {
+            ${1}
+        });
+        
+- trigger: jaftereach
+  scope: javascript
+  description: Add teardown
+  tag: Jasmine
+  text: |
+        afterEach(function() {
+            ${1}
+        });
+        
+- trigger: jspy
+  scope: javascript
+  description: Add spy
+  tag: Jasmine
+  text: |
+        spyOn(${1:objectToSpy}, '${2:methodToSpy}');
+        
+- trigger: jspycallthrough
+  scope: javascript
+  description: Add spy with call-through
+  tag: Jasmine
+  text: |
+        spyOn(${1:objectToSpy}, '${2:methodToSpy}').andCallThrough();
+        
+- trigger: jspyreturn
+  scope: javascript
+  description: Add spy returning specific value
+  tag: Jasmine
+  text: |
+        spyOn(${1:objectToSpy}, '${2:methodToSpy}').andReturn(${3:var});
+        
+- trigger: jspycallfake
+  scope: javascript
+  description: Add spy calling a fake function
+  tag: Jasmine
+  text: |
+        spyOn(${1:objectToSpy}, '${2:methodToSpy}').andCallFake(function() {
+            ${3}
+        });
+        
+- trigger: jspycreate
+  scope: javascript
+  description: Create a new spy
+  tag: Jasmine
+  text: |
+        var ${1:varName} = jasmine.createSpy('${2:spyName}');
+        
+- trigger: jspycreateobj
+  scope: javascript
+  description: Create multiple spies contained in an object
+  tag: Jasmine
+  text: |
+        var ${1:varName} = jasmine.createSpyObj('${2:spyObjName}', ['${2:spiesNames}']);
+        
+- trigger: jspycalled
+  scope: javascript
+  description: Expect spy to be called
+  tag: Jasmine
+  text: |
+        expect(${1:object}.${2:methodToSpy}).toHaveBeenCalled();
+        
+- trigger: jspynumcalls
+  scope: javascript
+  description: Expect spy to be called n times
+  tag: Jasmine
+  text: |
+        expect(${1:object}.${2:methodToSpy}.calls.length).toEqual(${3:num});
+        
+- trigger: jspyargs
+  scope: javascript
+  description: Expect spy to be called with specified arguments
+  tag: Jasmine
+  text: |
+        expect(${1:object}.${2:methodToSpy}).toHaveBeenCalledWith(${3:arguments});
+        
+- trigger: jspyrecentcall
+  scope: javascript
+  description: Get more recent spy call
+  tag: Jasmine
+  text: |
+        expect(${1:object}.${2:methodToSpy}.mostRecentCall.args[${3:argIndex}]).toEqual(${4:var});
+        
+- trigger: jspycall
+  scope: javascript
+  description: Get specific spy call
+  tag: Jasmine
+  text: |
+        expect(${1:object}.${2:methodToSpy}.calls[${3:callIndex}].args[${4:argIndex}]).toEqual(${5:var});
+        
+- trigger: jany
+  scope: javascript
+  description: Match anything having same constructor
+  tag: Jasmine
+  text: |
+        jasmine.any(${1:constructor})
+        
+- trigger: jclock
+  scope: javascript
+  description: Makes timer (timeout, interval) callbacks synchronous
+  tag: Jasmine
+  text: |
+        beforeEach(function() {
+            jasmine.Clock.useMock();
+        });
+        
+        it('${1:specName}', function() {
+            ${2:functionCallingTimeout}
+            // before callback
+            jasmine.Clock.tick(${3:millisecondsToWait});
+            // after callback
+        });
+         
+- trigger: jasync
+  scope: javascript
+  description: Test asynchronous call
+  tag: Jasmine
+  text: |
+            it('${1:specName}', function() {
+                runs(${2:functionWithTheCallback});
+                s
+                waitsFor(function() {
+                    // The function polls until it returns true 
+                    // or the timeout expires, whichever comes first. 
+                    // If the timeout expires, the spec fails with 
+                    // the error message.
+                    return ${3:conditiomBasedOnCallback};
+                }, '${4:errorMessage}', ${5:timeout});
+                
+                runs(function() {
+                    ${6:expectationsToBeRunAfterCallback}
+                });
+            });
 
         
