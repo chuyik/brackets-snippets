@@ -478,7 +478,7 @@
   description: Form
   text: |
         <form class="${1}" action="${1:index.html}" method="${2:post}">
-            ${4}
+            ${3}
         </form>
 
 - trigger: footer
