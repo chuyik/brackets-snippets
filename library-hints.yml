@@ -557,16 +557,16 @@
   description: HTML
   text: |
         <!DOCTYPE html>
-            <html>
-                <head>
-                    <meta name=viewport content="width=device-width, initial-scale=1">
-                    <meta charset="utf-8">
-                    <title>${1}</title>
-                </head>
-                <body>
-                    ${2}
-                </body>
-            </html>
+        <html>
+            <head>
+                <meta name=viewport content="width=device-width, initial-scale=1">
+                <meta charset="utf-8">
+                <title>${1}</title>
+            </head>
+            <body>
+                ${2}
+            </body>
+        </html>
 
 - trigger: kbd
   scope: html
